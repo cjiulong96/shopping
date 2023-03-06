@@ -1,0 +1,44 @@
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.flex-center {
+  @include flex;
+}
+
+.flex-row {
+  @include flex($justify: flex-start);
+}
+
+.flex-col {
+  @include flex($direction: column);
+}
+
+.flex-space {
+  @include flex($justify: space-between);
+}
+
+.flex-end {
+  @include flex($justify: flex-end);
+}
+
+.flex-around {
+  @include flex($justify: space-around);
+}
+
+.flex-evenly {
+  @include flex($justify: space-evenly);
+}
+
+@mixin mult-line($line) {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}

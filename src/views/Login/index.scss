@@ -1,0 +1,105 @@
+@import "@/styles/variables.scss";
+
+#login {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #eb5447 0, #ff8e3b);
+}
+#login .logo {
+  padding: 35px;
+  .picture {
+    margin: 0 auto;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    img {
+      width: 82px;
+      height: 82px;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+}
+#login .white_bg {
+  width: 310px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  input {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+#login .fast {
+  .item {
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid #ededed;
+    margin: 25px 0 20px;
+  }
+  .get_code {
+    position: absolute;
+    right: 0;
+    width: 75px;
+    height: 25px;
+    background-color: #f35446;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #fff;
+  }
+  .do_login {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    height: 44px;
+    border-radius: 22px;
+    background: linear-gradient(90deg, #f35447 0, #ff8e3c);
+    margin: 10px 0;
+  }
+}
+#login {
+  ::v-deep {
+    .van-tab {
+      font-size: 18px;
+      font-weight: 700;
+      color: #999;
+      &--active {
+        color: #282828;
+      }
+    }
+    .van-tabs__line {
+      width: 72px;
+    }
+  }
+}
+#login .tip {
+  height: 50px;
+  span {
+    font-size: 16px;
+    &:first-child {
+      color: #ccc;
+    }
+    &:last-child {
+      color: #fc4141;
+    }
+  }
+}
+#login .bottom {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApQAAAAkCAYAAAA3mqpgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozZDUwNjlmMy05NjI1LTRhZTItYjMwNC0yZDQ0ZTM3ZDFjNjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REE5RjQyRjk3NzgzMTFFOTg0Q0Q5ODE4RDgwOTI2MTQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REE5RjQyRjg3NzgzMTFFOTg0Q0Q5ODE4RDgwOTI2MTQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowYjA0NzcxMC1kNmFhLTQzOTMtYWFhMC1jNjkxMWYyZDVmZWIiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxMTViODdmNi0yNWY5LTE2NGQtYjUzOC02YzViOTc2NzVjOTkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7UM78mAAADQ0lEQVR42uzdvYtUVxgH4DPDEGxsLAKmtFAECwvL/AFqYWmpgrWdWATsLEUwXVJtRLQNKeJnJXZuYSGoWRRR/EBhtwisG1n2eg5zLW2y98752OeB16l27p6PhZ8z95530nVdGFL3+K+l+HIoLNrml4Mhh67bFQCAuk0mG1muO/vhaYarPpkcPnFmyDecDhwm08uKXQkAUKyVPrOVGSh7j6wTAECxBs9qYwTKh7E+WysAgOJs9Fmt+EC5Huuu9QIAKM6dPqsVHyiTpVib1gwAoBgpm/0xxhuPFSjfxLph3QAAipGy2euaAmXyW/DENwBACVIm+32sNx8zUP4X60KsNWsIAJDNWp/JRjtrczryANJX3+dirVpLAICFW+2z2JsxLzJdwECexTobfP0NALBIK30Gezb2haYLGlBKxadjXQue/gYAGNNmn7lOh5E/mfxmtsDBfYn1a6w/Y52KdTSWPtgAAMNIz6/cDvOjgV4v8sKzDINNA7wU60qsn2MdiXUg1k+xdm/jd+piTewlAKAS3TZ+Nn0K+W+sd7Gex1oO8w446zkGMss4id866gzTVefTq7/jvz9mGMdBfw8AUL2nGa75Mezdf7yFyRs0UE4On8gT729dTi8vMwVKAID/40V4/0+YHDtf/UCmDS3KI/sSAKjIcisDaSlQ3ou1ZW8CABXY6rOLQFmYdFPqffsTAKjA/T67CJQFSscSrdujAEDB1vvM0ozWAuWHMD+SqLNXAYACdX1W+SBQli0dQ5TOuHQ/JQBQWpi8GoY6MlGgHN3NWOkZfF9/AwAlSJnkYqzrLQ5u2vDCPYh1sv9fgE8rAYActvoskjLJ7VYHOWt8EdP9Cb+E+Y2vqXd4avO4L9aeAceu5SMA1G3IZy9SS8TVMG+4ks6ZTEcDvW19Amc7ZKOkYLnU19BytXwEAIbxMdZx07DDA2WulkVaPgJAE17kzBMtmJqCbdPyEQDqtmwKBMrctHwEgHo11QJRoKyXlo8AUK+mWiAKlHXT8hEA6tNcC0SBsm5aPgJAXZpsgShQ1k/LRwCoJ0w22QJRoGyDlo8AULamWyAKlO3Q8hEAyrMjWiDmMjMFo1hEy0cA4Pt2ZAvEXL4KMADOrbHLPVnkIAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 310px;
+  height: 18px;
+  margin: 0 auto;
+}
+#login .forgot_password {
+  justify-content: flex-end;
+  color: #666;
+  font-size: 14px;
+  padding: 0 0 10px 0;
+  .text {
+    margin-left: 5px;
+    line-height: 14px;
+  }
+}

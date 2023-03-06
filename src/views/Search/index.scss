@@ -1,0 +1,46 @@
+#search header {
+  padding: 0 16px;
+  height: 48px;
+  .input {
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    padding: 0 10px;
+  }
+  input {
+    font-size: 16px;
+    padding-left: 10px;
+    height: 32px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+#search .hot {
+  margin: 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  .text {
+    margin: 15px 0 12px;
+    text-align: left;
+    color: #999;
+    font-size: 16px;
+  }
+  .text_list {
+    text-align: left;
+    color: #454545;
+    font-size: 14px;
+    height: 30px;
+    span {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 8px;
+      border-radius: 2px;
+      border: 1px solid #aaa;
+      margin-right: 10px;
+    }
+  }
+}
+#search .search_list {
+  padding: 20px 15px;
+}

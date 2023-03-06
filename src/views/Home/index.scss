@@ -1,0 +1,184 @@
+@import "@/styles/variables.scss";
+
+$colors: $green $blue $red;
+#home {
+  overflow-y: auto;
+  padding-bottom: 50px;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  .header {
+    width: 100%;
+    height: 50px;
+  }
+  .logo {
+    width: 64px;
+    height: 23px;
+    margin-right: 12px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .search {
+    width: 250px;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #bbb;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    .icon-search {
+      margin-right: 8px;
+    }
+  }
+  .banner {
+    width: 100%;
+    height: 149px;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .menus {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px 0;
+    .item {
+      height: 70px;
+      flex-basis: 25%;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+    }
+    span {
+      color: #333;
+      font-size: 14px;
+    }
+  }
+  .news {
+    height: 40px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #f5f5f5;
+    -webkit-box-shadow: 0 5px 15px #f5f5f5;
+    -moz-box-shadow: 0 5px 15px #f5f5f5;
+    -o-box-shadow: 0 5px 15px #f5f5f5;
+    padding: 0 15px;
+    border-top: 1px solid #f4f4f4;
+    .picture {
+      width: 62px;
+      height: 14px;
+      border-right: 1px solid #ddd;
+      padding-right: 12px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .van-swipe {
+      height: 100%;
+      flex: 1;
+    }
+    .item {
+      color: #666;
+      font-size: 12px;
+    }
+    .text {
+      height: 100%;
+      line-height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+      padding-left: 12px;
+    }
+  }
+  .quickSelection {
+    color: #282828;
+    font-size: 16px;
+    .title {
+      border-top: 1px solid #eee;
+      margin: 0 15px;
+      padding-top: 18px;
+      font-weight: 700;
+    }
+    .more {
+      color: #333;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .scroll-product {
+      white-space: nowrap;
+      margin-top: 20px;
+      padding: 0 15px 20px 15px;
+      overflow: hidden;
+      .text {
+        font-size: 12px;
+        color: #282828;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #f5f5f5;
+        border-bottom: 0;
+        border-top: 0;
+        padding: 0 5px;
+      }
+    }
+    .van-swipe {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    ::v-deep {
+      .van-swipe__track {
+        width: 100% !important;
+      }
+      .item {
+        width: 90px !important;
+        height: 122px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        @each $color in $colors {
+          $index: index($colors, $color);
+          &:nth-of-type(3n + #{$index}) {
+            border-bottom: 2px solid $color;
+          }
+        }
+      }
+    }
+  }
+  .recommend {
+    color: #282828;
+    font-size: 16px;
+    margin-bottom: 25px;
+    .title {
+      border-top: 1px solid #eee;
+      margin: 0 15px;
+      padding-top: 18px;
+      font-weight: 700;
+    }
+    .more {
+      color: #333;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .scroll-product {
+      padding: 14px 15px 0;
+      overflow: hidden;
+    }
+    .box {
+      height: 145px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  .goodList {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

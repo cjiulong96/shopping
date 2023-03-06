@@ -1,0 +1,177 @@
+.order_detail {
+  .van-card__content {
+    text-align: left;
+  }
+  padding-bottom: 50px;
+  .head {
+    padding: 0 15px;
+    height: 75px;
+    background-color: #e93323;
+    .image {
+      width: 55px;
+      height: 55px;
+    }
+    .desc {
+      text-align: left;
+      margin-left: 16px;
+      .txt {
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 3.5px;
+      }
+      .date {
+        color: hsla(0, 0%, 100%, 0.8);
+        font-size: 12px;
+      }
+    }
+  }
+  .steps {
+    background-color: #fff;
+    .my_steps {
+      font-size: 14px;
+      color: #282828;
+    }
+    .my_step_item {
+      // height: 60px;
+      padding: 12px 0;
+      position: relative;
+      &:not(:last-child) {
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+        }
+        &::before {
+          width: 4px;
+          height: 4px;
+          background-color: #939390;
+          border-radius: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0px;
+        }
+        &:after {
+          width: 40px;
+          height: 1px;
+          bottom: 0;
+          left: 50%;
+          transform: translate(50%, -1px);
+          background-color: #939390;
+        }
+      }
+      &.on_step {
+        color: #e93323;
+        font-weight: 700;
+        &::before {
+          width: 6px;
+          height: 6px;
+        }
+      }
+      &.to_red {
+        &::before {
+          background-color: #e93323;
+        }
+      }
+      &.line_to_red {
+        &::after {
+          background-color: #e93323;
+        }
+      }
+      &:last-child {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 3px;
+          height: 3px;
+          background-color: #939390;
+          border-radius: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0px;
+        }
+      }
+    }
+
+    .addr {
+      height: 90px;
+      font-size: 14px;
+      align-items: flex-start;
+      padding: 20px 16px 0 16px;
+      .user {
+        margin-bottom: 6px;
+        .name {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+  .cards {
+    margin-top: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    .txt {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 16px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+    .kefu {
+      height: 44px;
+      line-height: 44px;
+      color: #e93323;
+      font-size: 16px;
+      .btn {
+        margin-left: 6px;
+      }
+    }
+  }
+  .infos,
+  .pay {
+    margin: 8px 0;
+    background-color: #fff;
+    padding: 16px;
+    .text {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      font-size: 14px;
+      color: #282828;
+      span:last-child {
+        color: #868686;
+      }
+    }
+  }
+  .pay {
+    margin-bottom: 0;
+  }
+  .infact {
+    height: 50px;
+    font-size: 16px;
+    padding: 0 16px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+    span {
+      color: #e93323;
+      font-weight: 700;
+    }
+  }
+  .tuikuan {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    .btn {
+      margin: 0 16px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      color: #aaaaaa;
+      border: 1px solid #aaaaaa;
+    }
+  }
+}

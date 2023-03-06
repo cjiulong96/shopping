@@ -1,0 +1,51 @@
+@import "@/styles/variables.scss";
+#goodList {
+  background-color: #f5f5f5;
+}
+#goodList header {
+  height: 44px;
+  padding: 0 0 0 16px;
+  background-color: #e93323;
+  .input {
+    font-size: 20px;
+    background-color: #fff;
+    height: 30px;
+    flex: 1;
+    padding: 0 10px;
+    border-radius: 20px;
+    input {
+      font-size: 14px;
+      padding-left: 6px;
+      width: 90%;
+    }
+  }
+  .icon {
+    width: 40px;
+    color: #fff;
+    margin: 04px;
+  }
+}
+#goodList .sort {
+  height: 44px;
+  background-color: #fff;
+  .item {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    &.active {
+      color: #fc4141;
+    }
+    img {
+      width: 8px;
+      margin-left: 8px;
+    }
+  }
+}
+#goodList .good_list {
+  padding: 0 10px;
+  margin: 10px 0 0 0;
+  flex-wrap: wrap;
+}
+#goodList .good_list_2 {
+  background-color: #fff;
+}

@@ -1,0 +1,225 @@
+.submit {
+  width: 100%;
+  padding-bottom: 60px;
+  .address {
+    padding: 0 10px;
+    width: 100%;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#e93323),
+      to(#f5f5f5)
+    );
+    background-image: linear-gradient(180deg, #e93323 0, #f5f5f5);
+    background-image: -moz-linear-gradient(to bottom, #e93323 0, #f5f5f5 100%);
+    padding-top: 50px;
+    .type {
+      width: 355px;
+      margin: 0 auto;
+      display: flex;
+      margin-bottom: 1px;
+    }
+    .item {
+      position: relative;
+      color: #fc4141;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        content: "\5FEB\9012\914D\9001";
+        font-size: 14px;
+        display: block;
+        height: 0;
+        width: 178px;
+        border-width: 0 10px 40px 0;
+        border-style: none solid solid;
+        border-color: transparent transparent #fff;
+        // z-index: 9;
+        border-radius: 3.5px 15px 0 0;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+    .item1 {
+      background-color: #fff;
+      width: 125px;
+      z-index: 9;
+      &::before {
+        content: "\5FEB\9012\914D\9001";
+      }
+    }
+    .item2 {
+      &::before {
+        content: "\5230\5E97\81EA\63D0";
+        width: 230px;
+        border-width: 0 0 30px 30px;
+        border-color: transparent transparent #f7c1bd;
+        border-radius: 20px 3px 0 0;
+        line-height: 30px;
+      }
+    }
+    .desc {
+      margin: 0 auto;
+      width: 355px;
+      height: 75px;
+      background-color: #fff;
+      padding: 14px 15px;
+      font-size: 14px;
+      .user {
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .name {
+        margin-right: 30px;
+      }
+      .default {
+        color: #fc4141;
+        margin-right: 10px;
+      }
+    }
+  }
+  .select_addr {
+    .content {
+      padding: 20px 20px 100px 20px;
+      .addr_item {
+        font-size: 14px;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .checked {
+        color: #fc4141;
+      }
+      .msg {
+        text-align: left;
+        flex: 1;
+        padding: 0 14px;
+      }
+      .user {
+        font-weight: 700;
+        .name {
+          margin-right: 10px;
+        }
+      }
+      .btn_box {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #fff;
+        padding: 20px;
+      }
+    }
+  }
+  .gray {
+    color: #969799;
+  }
+  .card_list {
+    .card {
+      background-color: #fff;
+    }
+    .count {
+      font-size: 15px;
+      height: 44px;
+      text-align: left;
+      line-height: 44px;
+      padding: 0 16px;
+    }
+    .van-card__content {
+      text-align: left;
+    }
+  }
+  .coupon {
+    margin-top: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    background-color: #ffffff;
+  }
+  .my_cell_box {
+    background-color: #ffffff;
+    .cell {
+      height: 44px;
+      padding: 0 16px;
+      font-size: 14px;
+      color: #323233;
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        height: auto;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        .title {
+          height: 40px;
+          line-height: 40px;
+          text-align: left;
+        }
+        .value {
+          height: 70px;
+          width: 100%;
+          display: flex;
+        }
+        .inp {
+          width: 100%;
+          background-color: #f9f9f9;
+          padding: 16px;
+          &::placeholder {
+            color: #969799;
+          }
+        }
+      }
+    }
+
+    .jifen {
+      margin: 0 10px 0 6px;
+      color: #fc4141;
+    }
+  }
+  .pay_way {
+    background-color: #fff;
+    font-size: 14px;
+    color: #323233;
+    padding: 0 16px 16px;
+    margin-top: 10px;
+    .title {
+      height: 44px;
+      line-height: 44px;
+      text-align: left;
+    }
+    .wechat,
+    .balance {
+      height: 44px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      &.active {
+        color: #fc4141;
+        border-color: #fc4141;
+      }
+      .line {
+        height: 22px;
+        background-color: #eee;
+        width: 1px;
+      }
+      .left,
+      .right {
+        width: 50%;
+      }
+    }
+  }
+  .bottom {
+    background-color: #fff;
+    color: #323233;
+    font-size: 14px;
+    padding: 4px 16px;
+    margin: 10px 0 0;
+    .total,
+    .yunfei {
+      height: 30px;
+    }
+  }
+  .van-submit-bar__bar {
+    border-top: 1px solid #eee;
+    .van-submit-bar__text {
+      text-align: left;
+    }
+  }
+}
